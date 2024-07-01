@@ -4,8 +4,8 @@
    Tutorial 5
    Review Assignment
    
-   Author:   
-   Date:     
+   Author:   William Meyers
+   Date:     2024-07-08
       
    Filename: tf_styles4.css
 
@@ -23,9 +23,23 @@
 
 /* General Flex Styles */
 
+body {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
 
+section:left{
+   flex-grow: 1;
+   flex-shrink: 8;
+   flex-basis: 130px;
+}
 
-
+section:right {
+   flex-grow: 8;
+   flex-shrink: 1;
+   flex-basis: 351px;
+}
 
 
 /* ===============================
