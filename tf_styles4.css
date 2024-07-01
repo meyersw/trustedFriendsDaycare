@@ -27,34 +27,70 @@ body {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
- }
+}
 
-section:left{
+section#left {
    flex-grow: 1;
    flex-shrink: 8;
    flex-basis: 130px;
 }
 
-section:right {
+section#right {
    flex-grow: 8;
    flex-shrink: 1;
    flex-basis: 351px;
 }
+
+.tips {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+article {
+   flex-grow: 2;
+   flex-shrink: 1;
+   flex-basis: 351px;
+}
+
+aside {
+   flex-grow: 1;
+   flex-shrink: 2;
+   flex-basis: 250px;
+}
+
+.horizontal {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
 
 
 /* ===============================
 	Mobile Devices: 0 to 480px 
    ===============================
 */
-	
 
+@media screen and (max-width: 480px) {
+   .vertical>ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 240px;
+   }
 
+   .left {
+      order: 99;
+   }
+
+   footer {
+      order: 100;
+   }
+}
 
 
 /* ============================================
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
-
-
-
