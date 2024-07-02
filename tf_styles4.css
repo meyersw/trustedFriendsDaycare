@@ -66,8 +66,6 @@ aside {
 }
 
 
-
-
 /* ===============================
 	Mobile Devices: 0 to 480px 
    ===============================
@@ -97,6 +95,18 @@ aside {
       order: 100;
    }
 
+   a#navicon {
+      display: block;
+   }
+
+   nav>ul {
+      display: none;
+   }
+
+   a#navicon:hover+ul,
+   nav.horizontal ul:hover {
+      display: block;
+   }
 
 }
 
@@ -105,3 +115,13 @@ aside {
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
+
+
+@media screen and (min-width: 481px) {
+nav.horizontal > ul {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+height: 160px;
+}
+}
