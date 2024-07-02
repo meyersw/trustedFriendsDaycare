@@ -67,6 +67,7 @@ aside {
 
 
 
+
 /* ===============================
 	Mobile Devices: 0 to 480px 
    ===============================
@@ -80,13 +81,23 @@ aside {
       height: 240px;
    }
 
-   .left {
+   header {
+      order: 0;
+   }
+
+   #left {
       order: 99;
+   }
+
+   #right {
+      order: 98;
    }
 
    footer {
       order: 100;
    }
+
+
 }
 
 
