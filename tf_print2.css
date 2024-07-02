@@ -17,6 +17,7 @@
 
 @media print {
 
+
    /* Hidden Objects */
 
    footer,
@@ -55,15 +56,17 @@
 
    aside {
       background-color: rgb(211, 211, 211);
+      display: block;
       margin-top: 0.3in;
    }
+
 
    aside>h1 {
       font-size: 18pt;
       line-height: 20pt;
    }
 
-   aside>img {
+   img {
       width: 0.8in;
    }
 
@@ -98,7 +101,7 @@
       page-break-inside: avoid;
    }
 
-   p{
+   p {
       widows: 3;
       orphans: 3;
    }
